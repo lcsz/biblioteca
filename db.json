@@ -1,7 +1,7 @@
 {
     "usuario": [
       { "id": 1, "login": "luiz", "pwd": "alt_hack_1234" }
-    ]
+    ],
     "livros": [
         {"id": "1", "nome": "O peregrino", "autor": "John Bunyan"},
         {"id": "2", "nome": "A peregrina", "autor": "John Bunyan"}
