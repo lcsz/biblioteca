@@ -1,0 +1,16 @@
+{
+    "dinossauros": [
+        {
+            "id": 1,
+            "nome": "T-REx"
+        },
+        {
+            "id": 2,
+            "nome": "Velociraptor"
+        },
+        {
+            "id": 3,
+            "nome": "Dinouiz"
+        }
+    ]
+}
