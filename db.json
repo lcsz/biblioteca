@@ -1,6 +1,6 @@
 {
     "usuario": [
-      { "id": 1, "login": "luiz@alt.bank", "pwd": "alt_hack_1234", "token": "bHVpejphbHRfaGFja18xMjM0" }
+      { "id": 1, "login": "luiz@alt.bank", "pwd": "alt_hack_1234", "token": "bHVpekBhbHQuYmFuazphbHRfaGFja18xMjM0" }
     ],
     "livros": [
         {"id": "1", "nome": "O peregrino", "autor": "John Bunyan"},
