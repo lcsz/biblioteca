@@ -30,3 +30,10 @@ body {
     border-radius: 10px;
     box-shadow: 3px 3px 3px gray;
 }
+
+#botaoEnviar:disabled {
+    pointer-events: all !important;
+    cursor: not-allowed;
+    background-color: gray;
+    border-color: gray;
+}

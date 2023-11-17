@@ -15,6 +15,8 @@
 
   <link rel="stylesheet" type="text/css" href="css/padrao.css">
 
+  <script src="login_service.js"></script>
+
 </head>
 
 <body>
@@ -23,7 +25,7 @@
 
     <div class="centralizar">
 
-      <h1>Esse e o site da biblioteca do Luiz</h1>
+      <h1 id="nomeUsuario">Esse e o site da biblioteca do Luiz</h1>
 
       <p> Para logar clique no botão</p>
 
@@ -32,7 +34,7 @@
       </button> -->
 
       <p>
-        <a href="login.html" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+        <a id="queroLogar" href="login.html" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
         Quero logar
       </a>
     </p>
@@ -40,6 +42,22 @@
     </div>
 
   </div>
+
+  <script>
+
+    (() => {
+      
+      debugger
+      var usuario = localStorage.getItem("usuario");
+
+      if (usuario != null) {
+        var jsonUsuario = JSON.parse(usuario);
+        document.getElementById("nomeUsuario").innerHTML = "Bem vindo " + jsonUsuario["login"] + " à biblioteca do Luiz";
+      }
+
+    })();
+
+  </script>
 
 </body>
 
