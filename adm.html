@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login da Biblioteca do Luiz</title>
+    </head>
+    <body>
+        <h1>Bem Vindo ao Admin do site</h1>
+        <button id="sair">Sair</button>
+
+
+<script>
+    
+        (() => {
+
+            debugger
+
+            var _usuario = localStorage.getItem("usuario");
+            var usuario = JSON.parse(_usuario);
+
+            if (_usuario == null || usuario["perfil"] != "BIBLIOTECARIO") {
+                window.location.href = "index.html";
+            }
+
+            var sair = document.getElementById("sair");
+            sair.addEventListener("click", (e) => {
+                localStorage.removeItem("usuario");
+                window.location.href = "index.html";
+            });
+        })();
+</script>
+
+    </body>
+    </html>

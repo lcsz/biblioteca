@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login da Biblioteca do Luiz</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+      <link rel="stylesheet" type="text/css" href="css/padrao.css">
+
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Login</h1>  
+                </div>
+                <div class="card-body">
+                    <form id="formLogin" novalidate>
+                        <div class="mb-3">
+                          <label for="login" class="form-label">Digite o seu Login:</label>
+                          <input type="text" class="form-control" id="login" focus="1">
+                         <div class="invalid-feedback" id="loginFeedback">
+                            Por favor, digite o seu login.
+                          </div> 
+                        </div>
+                        <div class="mb-3">
+                          <label for="pwd" class="form-label">Digite a sua senha:</label>
+                          <input type="password" class="form-control" id="pwd" autofocus>
+                          <div class="invalid-feedback">
+                            Por favor, digite a senha com ao menos 4 digitos.
+                          </div>
+                          <div class="valid-feedback">
+                            Senha digitada corretamente.
+                          </div>
+                        </div>
+                        
+                        <div class="row">
+                            <button class="btn btn-primary" id="botaoEnviar" disabled>Entrar</button>
+                        </div>
+                        
+                      </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+          
+
+          (() => {
+          var login = document.getElementById("login");
+          var pwd = document.getElementById("pwd");
+          var botaoEnviar = document.getElementById("botaoEnviar");
+          
+          function validaLogin(e) {
+              var feedback = document.getElementById("loginFeedback");
+
+              var value = login.value;
+              if (value.length < 6) {
+                login.classList.remove("is-valid");
+                login.classList.add("is-invalid");
+                feedback.innerHTML = "Por favor, digite o seu login com ao menos 6 caracteres.";
+              } else {
+                if (value.indexOf("@") < 0) {
+                  feedback.innerHTML = "O login deve conter o caractere @.";
+                  login.classList.remove("is-valid");
+                  login.classList.add("is-invalid");
+                } else {
+                  login.classList.remove("is-invalid");
+                  login.classList.add("is-valid");
+                }
+                botaoValido();
+              }
+          }
+
+          function validaPwd(e) {
+            if (e.keyCode == 13) {
+              e.preventDefault();
+              return;
+            }
+
+            var value = pwd.value;
+            if (value.length < 4) {
+              pwd.classList.remove("is-valid");
+              pwd.classList.add("is-invalid");
+            } else {
+              pwd.classList.remove("is-invalid");
+              pwd.classList.add("is-valid");
+            }
+            botaoValido();
+          }
+
+          function botaoValido() {
+            var loginValido = login.classList.contains("is-valid");
+            var pwdValido = pwd.classList.contains("is-valid");
+            
+            if (loginValido && pwdValido) {
+              botaoEnviar.disabled = false;
+            } else {
+              botaoEnviar.disabled = true;
+            }
+          }
+
+          function vaParaHome() {
+            window.location.href = "index.html";
+          }
+
+          function vaParaAdm() {
+            window.location.href = "adm.html";
+          }
+
+          async function autenticar(login, senha) {
+            var base64LoginSenha = btoa(login + ":" + senha);            
+
+            var response = await fetch("https://my-json-server.typicode.com/lcsz/biblioteca/usuario?token=" + base64LoginSenha);
+            
+            var listaUsuario = await response.json();
+            if (listaUsuario.length > 0) {
+              var usuario = listaUsuario[0];
+              localStorage.setItem("usuario", JSON.stringify(usuario));
+              
+              if (usuario["perfil"] == "BIBLIOTECARIO") {
+                vaParaAdm();
+              } else {
+                vaParaHome();
+              }
+              
+            } else {
+              alert("Login ou senha inválidos");
+            }
+
+          }
+            
+          pwd.addEventListener("keydown", notEnter);
+          login.addEventListener("keyup", validaLogin);
+          pwd.addEventListener("keyup", validaPwd);
+
+          function notEnter(e) {
+            if (e.keyCode == 13) {
+              e.preventDefault();
+              return;
+            }
+          }
+          
+          botaoEnviar.addEventListener("click", async (e) => {
+            e.preventDefault();
+            
+            var loginValue = login.value;
+            var pwdValue = pwd.value;
+            debugger;
+            await autenticar(loginValue, pwdValue);
+
+          });
+
+
+
+
+          })();
+
+        </script>
+        
+    </body>
+</html>
