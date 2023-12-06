@@ -1,22 +1,426 @@
 {
     "usuario": [
-      { "id": 1, 
-        "login": "luiz@alt.bank", 
-        "pwd": "alt_hack_1234", 
-        "token": "bHVpekBhbHQuYmFuazphbHRfaGFja18xMjM0", 
-        "nome": "Luiz",
-        "perfil": "BIBLIOTECARIO"
-      },
-      { "id": 2, 
-        "login": "luizao@", 
-        "pwd": "1234", 
-        "token": "bHVpemFvQDoxMjM0",
-        "nome": "Luiz",
-        "perfil": "USUARIO"
-      }
+        {
+            "id": 1,
+            "login": "luiz@alt.bank",
+            "pwd": "alt_hack_1234",
+            "token": "bHVpekBhbHQuYmFuazphbHRfaGFja18xMjM0",
+            "nome": "Luiz",
+            "perfil": "BIBLIOTECARIO"
+        },
+        {
+            "id": 2,
+            "login": "luizao@",
+            "pwd": "1234",
+            "token": "bHVpemFvQDoxMjM0",
+            "nome": "Luiz",
+            "perfil": "USUARIO"
+        },
+        {
+            "id": 3,
+            "login": "alexis@htf.com",
+            "pwd": "1234",
+            "token": "YWxleGlzQGh0Zi5jb206MTIzNA==",
+            "nome": "Alexis",
+            "perfil": "USUARIO"
+        },
+        {
+            "id": 4,
+            "login": "beatriz@htf.com",
+            "pwd": "1234",
+            "token": "YmVhdHJpekBodGYuY29tOjEyMzQ=",
+            "nome": "Beatriz",
+            "perfil": "USUARIO"
+        },
+        {
+            "id": 5,
+            "login": "leandro@htf.com",
+            "pwd": "1234",
+            "token": "bGVhbmRyb0BodGYuY29tOjEyMzQ=",
+            "nome": "Leandro",
+            "perfil": "USUARIO"
+        },
+        {
+            "id": 6,
+            "login": "robson@htf.com",
+            "pwd": "1234",
+            "token": "cm9ic29uQGh0Zi5jb206MTIzNA==",
+            "nome": "Robson",
+            "perfil": "USUARIO"
+        }
     ],
-    "livros": [
-        {"id": "1", "nome": "O peregrino", "autor": "John Bunyan"},
-        {"id": "2", "nome": "A peregrina", "autor": "John Bunyan"}
+    "autor": [
+        "C. S. Lewis",
+        "Tish H. Warren",
+        "John MacArthur",
+        "Melissa Garabeli",
+        "Rodrigo Bibo",
+        "J. R. R. Tolkien",
+        "Matheus Ortega",
+        "André Daniel Reinke",
+        "Sheila Walsh",
+        "Collin Hasen",
+        "John Stott",
+        "John Bunyan",
+        "Humphrey Carpenter",
+        "Herman Bavinck",
+        "Yago Martins"
+    ],
+    "categoria": [
+        "Romance",
+        "Cristianismo",
+        "Infantil",
+        "Biografia"
+    ],
+    "editora": [
+        "Thomas Nelson",
+        "Berith",
+        "Harper Collins",
+        "Pilgrim"
+    ],
+    "livro": [
+        {
+            "id": 1,
+            "titulo": "Cartas de C. S. Lewis",
+            "autor": "C. S. Lewis",
+            "descricao": "Cartas de C. S. Lewis\n Durante décadas, a vida e a mente de C.S. Lewis têm fascinado aqueles que leem seus escritos. Prolífico escritor e pensador, sua correspondência pessoal revela muito sobre a sua vida privada, suas reflexões, amizades e sentimentos. \nNesta coletânea organizada por Walter Hooper, é possível conhecer os caminhos percorridos pelo escritor através das cartas enviadas por ele para seus familiares e amigos, dentre eles, personalidades como J.R.R. Tolkien e Dorothy L. Sayers. As cartas, organizadas em ordem cronológica, tratam dos diversos interesses do escritor, passando pela teologia, crítica literária, poesia, fantasia e histórias infantis. \nA partir delas é possível acompanhar o amadurecimento de Lewis, desde seus anos no exército, passando pela vida acadêmica em Oxford, seus primeiros passos na fé cristã e os anos de escrita de algumas de suas maiores obras.",
+            "paginas": 640,
+            "editora": "Thomas Nelson",
+            "categoria": "Romance",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/cartas-de-c-s-lewis-c-s-lewis-88044/274961.jpg?w=800&h=800&v=no-change&qs=ignore",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/cartas-de-c-s-lewis-c-s-lewis-88044/274961-4.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "titulo": "O Regresso do Peregrino",
+            "autor": "C. S. Lewis",
+            "descricao": "O primeiro livro publicado por C. S.Lewis após sua conversão, O regresso do Peregrino é, de uma certa maneira, a ficcionalização da busca do autor por uma satisfação espiritual que, eventualmente, o levou ao cristianismo. Sem ficar preso unicamente à sua experiência pessoal, Lewis amplia o escopo de sua história ao representar a natural busca humana pela satisfação – e a consequente desilusão. \nClaramente baseada em O Peregrino, o clássico de John Bunyan, o livro retrata de modo contundente as várias correntes teológicas e o temperamento da época, por meio da passagem do protagonista por lugares como a cidade de Caçaplauso, o planalto da Igreja Alta e os longínquos pântanos dos teosofistas. Como disse o próprio autor: “toda boa alegoria não existe para ocultar, mas para revelar; tornar o mundo interno mais palpável”. Nas habilidosas mãos de Lewis, esta alegoria transforma-se em poderosa defesa apologética da fé cristã.",
+            "paginas": 320,
+            "editora": "Thomas Nelson",
+            "categoria": "Romance",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/o-regresso-do-peregrino-lewis-c-s-lewis-89787/278410-1.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "titulo": "Sobre Histórias",
+            "autor": "C. S. Lewis",
+            "descricao": "C.S. Lewis era um ávido leitor, capaz de ir de um assunto para outro com enorme facilidade e destreza. Isso fica evidente na coletânea de textos reunidos neste livro inédito incluindo ensaios, artigos, resenhas críticas, tributos, dentre outros gêneros. Sobre histórias mostra um outro lado da vida de Lewis: a de brilhante acadêmico e professor de Literatura Inglesa da Universidade de Oxford, onde ficou conhecido por suas palestras geniais e profundas sobre literatura. Seja resenhando os livros de grandes autores como J.R.R. Tolkien e George Orwell ou refletindo sobre importantes aspectos teóricos da literatura, Sobre histórias tem como condutor principal a excelência da História e reúne ensaios que sintetizam suas ideias sobre ficção científica, a natureza dos contos de fada, fantasia e inspiração.",
+            "paginas": 272,
+            "editora": "Thomas Nelson",
+            "categoria": "Romance",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/sobre-historias-c-s-lewis-84256/270778.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "titulo": "Reflexões cristãs",
+            "autor": "C. S. Lewis",
+            "descricao": "Considerado um apologeta tão brilhante quanto um crítico de seu tempo, C. S. Lewis reúne em Reflexões cristãs uma série de textos que abrangem praticamente todas as etapas de sua carreira, publicados em periódicos ou lidos em reuniões acadêmicas. Nesta obra, Lewis se aventura a discorrer, analisar e ponderar temas tão diversos quanto cultura, ética, literatura, música, práticas devocionais, tudo em seu estilo singular. Sem medo da polêmica, ele desafia o espírito de secularização que testemunhou ao longo da vida (e que parecia mais ameaçador na década de 1960, quando esta obra foi originalmente publicada) com uma teologia robusta, uma lógica impecável e uma sólida convicção dos valores o cristianismo puro e simples que abraçou e defendeu até o fim da vida.",
+            "paginas": 176,
+            "editora": "Thomas Nelson",
+            "categoria": "Romance",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/reflexoes-cristas-c-s-lewis-84433/270955.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/reflexoes-cristas-c-s-lewis-84433/270955-1.jpg"
+            ]
+        },
+        {
+            "id": 5,
+            "titulo": "Trilogia Cósmica",
+            "autor": "C. S. Lewis",
+            "descricao": "A Trilogia Cósmica é uma série de livros de ficção científica criada por C. S. Lewis como resultado de uma aposta entre ele e seu grande amigo J. R. R. Tolkien. A famosa amizade entre os dois foi eternizada pela criação do personagem principal, Elwin Ransom, professor e filólogo, assim como Tolkien. \nDesenvolvida em três livros – “Além do planeta silencioso”, “Perelandra” e “Aquela fortaleza medonha” –, as aventuras pelo espaço do Dr. Ransom incluem viagens em naves nada convencionais, criaturas mágicas e descobertas surpreendentes. \nComo Tolkien observa na apresentação que acompanha este volume, Lewis cria um thriller envolvente com grande número de implicações filosóficas. Isso porque, ao colocar o seu protagonista em situações inesperadas, o autor usa a ficção cristã para explorar as condições humanas fundamentais e revelar verdades transcendentais. \nNesta nova edição em volume único e com uma linda capa nova, você encontrará, além do mundo de encantos, batalhas épicas e situações inesperadas, um prefácio de J.R.R. Tolkien mais que especial.",
+            "paginas": 784,
+            "editora": "Thomas Nelson",
+            "categoria": "Romance",
+            "top5": 1,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/trilogia-cosmica-c-s-lewis-90566/279350-1.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/trilogia-cosmica-c-s-lewis-90566/279350-2.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/trilogia-cosmica-c-s-lewis-90566/279350-5.jpg"
+            ]
+        },
+        {
+            "id": 6,
+            "titulo": "A Abolição do Homem",
+            "autor": "C. S. Lewis",
+            "descricao": "Surpreendente e profético, A abolição do homem é um dos livros mais debatidos de C.S. Lewis. Nas poucas, porém densas páginas desta obra, o célebre autor britânico defende a moralidade absoluta e os valores universais, como o altruísmo, a caridade e o amor, além de expor as consequências da falta desses princípios na sociedade.\nCriticando os argumentos dos relativistas, a obra agora em nova edição com capa dura e acabamento de luxo alerta para os perigos de questionar os valores morais objetivos, comuns a todos, sem os quais os seres humanos correm o risco de perder a humanidade. Com bases sólidas e profundas, Lewis mostra que a tentativa de abolir a moralidade equivale, no fim, a abolir o próprio homem, e convida os leitores a não se render à tendência relativista que permeia a sociedade contemporânea.",
+            "paginas": 128,
+            "editora": "Thomas Nelson",
+            "categoria": "Romance",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/a-abolicao-do-homem-c-s-lewis-84270/270792.jpg"
+            ]
+        },
+        {
+            "id": 7,
+            "titulo": "Liturgia do Ordinário",
+            "autor": "Tish H. Warren",
+            "descricao": "'Não tenho tempo para Deus'. Essa reclamação é frequente demais para os cristãos. Mas e se a nossa própria rotina com toda sua bagunça e repetições aparentemente irrelevantes, fosse um meio de Deus estar presente conosco? Este livro, estruturado como se você estivesse vivendo um dia comum na vida da autora, explora a vida diário com o olhar da liturgia. nossos hábitos, dos mais banais (como arrumar a cama ou escovar os dentes) aos mais irritantes (como brigas conjugais ou ficar preso no engarrafamento), podem ser uma espécie de disciplina espiritual. Tish Harrison Warren, esposa, mãe e missionária universitária, escreveu uma teologia prática do seu dia a dia. O tédio não vai mais roubar as bênçãos que Deus colocou na sua rotina.",
+            "paginas": 231,
+            "editora": "Thomas Nelson",
+            "categoria": "Cristianismo",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/liturgia-do-ordinario-tish-h-warren-87348/274230.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/liturgia-do-ordinario-tish-h-warren-87348/274230-1.jpg"
+            ]
+        },
+        {
+            "id": 8,
+            "titulo": "Doze Mulheres Extraordinariamente Comuns",
+            "autor": "John MacArthur",
+            "descricao": "DOZE MULHERES DIFERENTES. UMA DEVOÇÃO EM COMUM. Exaltadas por sua coragem, visão, hospitalidade e dons espirituais, não é de admirar que as mulheres fossem tão importantes para o plano de Deus revelado no Antigo e no Novo Testamento. Não foram suas qualidades naturais que fizeram delas mulheres extraordinárias, mas o poder soberano do Deus a quem adoravam e serviam.",
+            "paginas": 224,
+            "editora": "Thomas Nelson",
+            "categoria": "Cristianismo",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/doze-mulheres-extraordinariamente-comuns-john-macarthur-84427/270949.jpg"
+            ]
+        },
+        {
+            "id": 9,
+            "titulo": "O urso e o eco",
+            "autor": "Melissa Garabeli",
+            "descricao": "O urso Bernardo tem enfrentado sérios problemas com uma companhia indesejada em sua caverna: o eco. A cada dia que passa, o eco vai se tornando cada vez maior, e o urso, mais triste e silencioso. Até que um dia, quando recebe a visita repentina de um forasteiro pedindo um pouco de mel, o sofrimentode Bernando dá lugar ao conforto de uma bela amizade.",
+            "paginas": 48,
+            "editora": "Thomas Nelson",
+            "categoria": "Infantil",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/o-urso-e-o-eco-89596/277092-1.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/o-urso-e-o-eco-89596/277092-2.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/o-urso-e-o-eco-89596/277092-3.jpg"
+            ]
+        },
+        {
+            "id": 10,
+            "titulo": "Quando Meu Sorvete Cai",
+            "autor": "Rodrigo Bibo",
+            "descricao": "Júlia tem a vida perfeita interrompida quando seus planos são frustrados. Será que Deus não a ama mais? \nRodrigo Bibo, voz do Bibotalk, um dos maiores podcasts cristãos do Brasil, apresenta uma incrível mensagem para os pequenos neste livro infantil com capa dura, ilustrações inspiradas nos quadrinhos e uma história recheada de easter eggs de O Deus que destrói sonhos! \nNeste livro nos traz a memória que Deus nos ama em todos os momentos, inclusive quando nos diz não.",
+            "paginas": 48,
+            "editora": "Thomas Nelson",
+            "categoria": "Infantil",
+            "top5": 1,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/quando-meu-sorvete-cai-rodrigo-bibo-90574/279358-2.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/quando-meu-sorvete-cai-rodrigo-bibo-90574/279358-3.jpg"
+            ]
+        },
+        {
+            "id": 11,
+            "titulo": "Doze Homens Extraordinariamente Comuns",
+            "autor": "John Macarthur Jr",
+            "descricao": "Como os apóstolos foram moldados para alcançar o sucesso em sua missão\nOs apóstolos são tidos como pessoas supra-humanas. Essa visão equivocada tira deles sua humanidade com erros e acertos, virtudes e defeitos. Mas eles eram homens comuns, extraordinariamente comuns. Entre eles havia pescadores, um cobrador de impostos e um ativista político fundamentalista. Eles não tinham prestígio social, não eram letrados nem influentes na religião judaica. Havia gente mais capacitada intelectualmente e moralmente a fim de ser um dos apóstolos de Jesus. Por que então ele escolheu justamente aqueles homens normais? Este livro mostra as razões por que Jesus fez essa improvável escolha e o que isso tem a nos ensinar. Aprendemos, sobretudo, que Deus pode usar cada um de nós, com nossas limitações, e fazer coisas extraordinárias e impactantes no mundo.",
+            "paginas": 240,
+            "editora": "Thomas Nelson",
+            "categoria": "Cristianismo",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/doze-homens-extraordinariamente-comuns-john-macarthur-jr-84287/270809.jpg"
+            ]
+        },
+        {
+            "id": 12,
+            "titulo": "Box Trilogia O Senhor dos Anéis",
+            "autor": "J. R. R. Tolkien",
+            "descricao": "Box Trilogia O Senhor dos Anéis Apesar de ter sido publicado em três volumes A Sociedade do Anel, As Duas Torres e O Retorno do Rei desde os anos 1950, O Senhor dos Anéis não é exatamente uma trilogia, mas um único grande romance que só pode ser compreendido em seu conjunto, segundo a concepção de seu autor, J.R.R. Tolkien. Com design cuidadosamente pensado para refletir a unidade da obra e os desenhos originais feitos por Tolkien para as capas de cada volume, este box reúne os três livros da Saga do Anel e oferece aos leitores uma nova oportunidade de mergulhar no notável mundo da Terra-média.",
+            "paginas": 1568,
+            "editora": "Harper Colins",
+            "categoria": "Romance",
+            "top5": 1,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/box-trilogia-o-senhor-dos-aneis-86190/272873.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/box-trilogia-o-senhor-dos-aneis-86190/272873-2.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/box-trilogia-o-senhor-dos-aneis-86190/272873-3.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/box-trilogia-o-senhor-dos-aneis-86190/272873-4.jpg"
+            ]
+        },
+        {
+            "id": 13,
+            "titulo": "As Crônicas de Nárnia",
+            "autor": "C.S. Lewis",
+            "descricao": "Reinos mágicos, criaturas inesquecíveis e batalhas épicas entre o bem o mal: essas histórias são narradas em As Crônicas de Nárnia ? uma série de sete livros que acompanha crianças curiosas e suas aventuras entre o nosso mundo e outros universos mágicos.\nO Leão, a Feiticeira e o Guarda-roupa conta a história dos irmãos Pedro, Susana, Edmundo e Lúcia Pevensie. Em meio a brincadeiras na casa de um velho professor, eles descobrem um misterioso guarda-roupa que os leva a Nárnia, um reino mágico que sofre de um inverno sem fim desde que Jadis, a temida Feiticeira Branca, tomou o poder. Mas uma antiga profecia ? que envolve justamente quatro crianças, além de um fantástico leão chamado Aslan ? afirma que há esperança para o reino, contanto que se tenha coragem.\nEscrito pelo gênio C.S. Lewis, O Leão, a Feiticeira e o Guarda-roupa foi o primeiro livro lançado da saga de As Crônicas de Nárnia, em 1950. Esta obra encanta crianças e adultos há mais de 70 anos, o que faz dela um dos maiores clássicos do gênero infantojuvenil e fantástico.",
+            "paginas": 192,
+            "editora": "Thomas Nelson",
+            "categoria": "Romance",
+            "top5": 1,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/as-cronicas-de-narnia-o-leao-a-feiticeira-e-o-guarda-roupa-c-s-lewis-91693/280530-1.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/as-cronicas-de-narnia-o-leao-a-feiticeira-e-o-guarda-roupa-c-s-lewis-91693/280530-6.jpg"
+            ]
+        },
+        {
+            "id": 14,
+            "titulo": "Economia do Reino",
+            "autor": "Matheus Ortega",
+            "descricao": "Quatro cominhos cristãos para lidar com a riqueza e a pobreza no mundo\nUsando recurso terrenos para produzir frutos eternos. Como seria viver em um mundo sem riqueza nem pobreza? Um mundo sem acúmulo nem miséria, sem desigualdade ou injustiça? A Bíblia anuncia a vinda desse mundo, livre de sofrimento, dor ou morte. É o Reino de Deus, inaugurado por Jesus nesta era. Enquanto todos os cristãos oram, em uma só voz, para que esse Reino venha em sua forma plena, há diversidade de vozes sobre como viver os valores do Reino no mundo de hoje – especialmente em relação ao controverso tema da riqueza e pobreza.\nEconomia do Reino, aborda esse tema complexo de maneira prática e acessível,  os Pais da Igreja e as Escrituras dão ao assunto, Matheus Ortega apresentamas sem propor uma resposta simplista. Partindo de entes abordagens, que quatro perfis bíblicos que demonstram formas distintas, porém orientadas pela economia do Reino de Deus, de lidar com as riquezas deste mundo à luz do princípio eterno e convergente do amor.",
+            "paginas": 208,
+            "editora": "Thomas Nelson",
+            "categoria": "Cristianismo",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/economia-do-reino-matheus-ortega-88255/275277.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/economia-do-reino-matheus-ortega-88255/275277-1.jpg"
+            ]
+        },
+        {
+            "id": 15,
+            "titulo": "Aqueles da Bíblia",
+            "autor": "André Daniel Reinke",
+            "descricao": "A formação do povo de Deus na perspectiva bíblica, histórica e teológica.Nossa leitura da Bíblia é profundamente influenciada pela maneira como imaginamos o passado. Ciente disso, o autor nos propõe uma nova imaginação dessa narrativa, trazendo as pesquisas acadêmicas da arqueologia e da historiografia para compor o contexto de formação do Israel antigo. André Daniel Reinke busca compreender esse povo na especificidade de cada época, explicitando as muitas identidades tão belamente descritas nas páginas da Bíblia. Por isso, ele pergunta: o que diferencia e o que aproxima o mesopotâmio Abraão do levita Moisés? Que relação continuidade cultural há entre o danita Sansão e o efraimita Samuel? Quais são as ligações deles com o judaíta Davi ou com o judeu Paulo? E com o galileu Jesus? Eles falavam a mesma língua? Como os antigos israelitas se relacionavam com as culturas vizinhas? Como era a compreensão de Deus em cada tempo?Essas são algumas questões exploradas em uma ampla pesquisa, com pinceladas da história dos impérios e das influências políticas, culturais e religiosas dos outros povos sobre Israel. Entre assimilações e rupturas, o povo narrado na Bíblia foi constituído em muitas identidades, algumas desaparecidas na poeira do tempo, outras vivas até os nossos dias. No meio dessa história encarnada na realidade, veio a revelação divina, registrada no testemunho desse povo sobre a invasão de seu Deus na história. Este livro é uma obra fundamental para que o leitor possa compreender melhor o contexto histórico, cultural e religioso da formação do povo de Israel e da própria emergência da Bíblia Sagrada.",
+            "paginas": 416,
+            "editora": "Thomas Nelson",
+            "categoria": "Cristianismo",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/aqueles-da-biblia-andre-daniel-reinke-88351/275374.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/aqueles-da-biblia-andre-daniel-reinke-88351/275374-1.jpg"
+            ]
+        },
+        {
+            "id": 16,
+            "titulo": "Manual da Princesinha",
+            "autor": "Sheila Walsh",
+            "descricao": "Um jeito divertido de aprender a se comportar como uma princesinha de Deus.\nSer princesa é um sonho maravilhoso e mágico, mas é acompanhado de uma grande responsabilidade. Todo mundo espera que uma filha do rei se comporte de uma maneira especial - que seja educada, delicada, elegante e graciosa. A boa notícia é que você (isso mesmo, você!) é uma linda princesinha criada por Deus já assim, do seu jeitinho. E , quanto ele molda seu coração você fica ainda mais deslumbrante.",
+            "paginas": 141,
+            "editora": "Thomas Nelson",
+            "categoria": "Infantil",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/manual-da-princesinha-capa-dura-87408/274290.jpg"
+            ]
+        },
+        {
+            "id": 17,
+            "titulo": "Timothy Keller - Sua Formação Espiritual e Intelectual ",
+            "autor": "Collin Hasen",
+            "descricao": "Esta é a história de como o ministério de Tim Keller foi moldado por livros, pessoas e — principalmente — por Deus\nMuitos já leram os livros e escutaram os sermões de Timothy Keller. Mas quem foram as pessoas que influenciaram seu pensamento e o auxiliaram em seu crescimento espiritual? Com acesso irrestrito às notas pessoais e aos sermões de Keller, e por meio de entrevistas exclusivas com familiares e amigos, Collin Hansen oferece um perfil inédito de um dos pastores mais influentes do século 21.\nPassar tempo com Keller é ouvir sobre o que ele está lendo, estudando e vendo. É por isso que sua história também é a história das pessoas que impactaram sua vida: a mulher que o ensinou a ler a Bíblia, o professor que mostrou como é possível pregar sobre Jesus a partir de qualquer texto das Escrituras, o sociólogo que o ensinou a enxergar além da superfície da sociedade e a estudante universitária que o incentivou a ler os livros de ficção de C. S. Lewis — uma estudante chamada Kathy e que mais tarde se tornaria a sua esposa. De forma envolvente, Hansen entrelaça essas histórias com os relatos da própria vida de Keller e mostra como sua infância e seus primeiros anos de ministério pastoral o levaram até Nova York e à fama internacional que ele nunca desejou.\nPor meio dessa biografia, o leitor também é convidado a passar um tempo com Timothy Keller e assim entender os princípios e práticas que lhe permitiram sintetizar tantas influências em um ministério coeso e como suas pregações e ensinamentos continuam relevantes diante dos desafios emergentes de nossos dias.",
+            "paginas": 352,
+            "editora": "Thomas Nelson",
+            "categoria": "Biografia",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/timothy-keller-sua-formacao-espiritual-e-intelectual-collin-hasen-92494/281355-1.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/timothy-keller-sua-formacao-espiritual-e-intelectual-collin-hasen-92494/281355-3.jpg"
+            ]
+        },
+        {
+            "id": 18,
+            "titulo": "O Cristão em uma Sociedade não Cristã",
+            "autor": "John Stott",
+            "descricao": "Uma parte considerável da Igreja Cristã criou uma convicção que a única relação que deveria ter com temas sociais como a política, diversidade, meio ambiente, aborto e tensões sociais, entre outros assuntos limitavam-se apenas a oração. O pequeno envolvimento nos assuntos contemporâneos em nome do aprofundamento bíblico criou um precipício que o autor John Stott se esforça para ajudar com este livro. O cristão em uma sociedade não cristã é mais do que uma análise sobre a sociedade moderna e seus ataques é uma chamada ao pensamento crítico e ao engajamento a partir das verdades eternas contidas nas Escrituras Sagradas. Neste livro O Cristão em uma Sociedade não Cristã o autor John Stott analisa com uma visão abrangente as práticas da sociedade, desde os debates sobre gênero e eutanásia até os movimentos étnicos e religiosos que incentivam o terrorismo, e passando pelos riscos globais, como epidemias e poluição do meio ambiente. John Stott expõe com uma abordagem ampla e engajada do mundo que nos cerca é tão urgente quanto a intercessão e a proclamação do Reino de Deus. Lançada nos anos 1980, revisada e atualizada por Roy McCloughry e endossada pelo próprio Stott, esta obra que conta ainda com um guia de estudo  continua sendo referência para todo cristão que compreende a relevância de seu papel em um cenário cultural cada vez mais complexo, onde a sede por compaixão, ética e justiça continua tão grande quanto no passado.",
+            "paginas": 640,
+            "editora": "Thomas Nelson",
+            "categoria": "Cristianismo",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/o-cristao-em-uma-sociedade-nao-crista-john-stott-84439/270961.jpg"
+            ]
+        },
+        {
+            "id": 19,
+            "titulo": "O Peregrino",
+            "autor": "John Bunyan",
+            "descricao": "O Peregrino é uma obra clássica da literatura cristã, escrita pelo autor John Bunyan. Publicado pela primeira vez em 1678, o livro conta a história da jornada de um homem chamado Cristão em busca da salvação de sua alma.\n A narrativa se desenrola como uma alegoria, onde Cristão é retratado como um peregrino que se vê sobrecarregado por um fardo pesado, simbolizando o peso do pecado. Determinado a encontrar a libertação, ele embarca em uma jornada em direção à Cidade Celestial, um lugar que representa a salvação eterna.\n Durante sua jornada, cristão encontra diversos personagens e enfrenta vários desafios que simbolizam as tentações, dúvidas e obstáculos que um cristão pode enfrentar em sua vida espiritual. Ele passa por cidades corrompidas, desfiladeiros perigosos e montanhas traiçoeiras, mas também encontra ajuda e encorajamento de personagens como Evangelista, Fiel e Esperançoso.\n Através da história de Cristão, Bunyan explora temas como fé, arrependimento, perseverança e redenção. O livro é uma reflexão profunda sobre a condição humana e a busca pela verdadeira felicidade espiritual. 'O Peregrino' continua a ser amplamente lido e apreciado até os dias atuais, cativando leitores com sua mensagem de esperança, perdão e fé inabalável.",
+            "paginas": 240,
+            "editora": "Berith",
+            "categoria": "Romance",
+            "top5": 1,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/o-peregrino-classicos-da-literatura-john-bunyan-92647/281529-1.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/o-peregrino-classicos-da-literatura-john-bunyan-92647/281529-2.jpg"
+            ]
+        },
+        {
+            "id": 20,
+            "titulo": "O Hobbit",
+            "autor": "J. R. R. Tolkien",
+            "descricao": "Bilbo bolseiro era um dos mais respeitáveis hobbits de todo o COndado até que, um dia, o mago Gandalf bate à sua porta. A partir de então, toda   sua vida pacata e campestre soprando anéis de fumça com seu belo cabimbo começa a mudar. Ele é convocado a participar de uma aventura por niguém menos do que Thorin Escudo-de-carvalho, um príncipe do poderoso povo dos Anãos. \nEssa jornada fará Bilbo, Gandalf e 13 anões atravessarem a Terra-média, passando por inúmeros perigos, sejam eles, os imensos trols, as Montanhas Nevoentas infestadas de gbelins ou a muito antiga e misteriosa trevamata, até chegarem (se conseguirem) na montanha solitária. Lá está um incalculável tesouro, mas há um porém. Deitado em cima dele está Samug, o Dourado, um dragão malicioso que... bem, você terá que ler e descobrir.",
+            "paginas": 320,
+            "editora": "Harper Collins",
+            "categoria": "Romance",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/o-hobbit-j-r-r-tolkien-capa-smaug-87848/274734.jpg"
+            ]
+        },
+        {
+            "id": 21,
+            "titulo": "Os Filhos De Húrin",
+            "autor": "J. R. R. Tolkien",
+            "descricao": "Depois da publicação de O Silmarillion, Os Filhos de Húrin é o trabalho seguinte de Christopher Tolkien como editor e curador dos manuscritos de seu pai, J.R.R. Tolkien. O livro é o terceiro dos Três Grandes Contos dos Dias Antigos e, assim como A Queda de Gondolin e Beren e Lúthien, conta com ilustrações de Alan Lee.\nSeis mil anos antes de o Um Anel ser destruído, a Terra-média é assombrada por Morgoth, o Primeiro Senhor Sombrio, senhor e mestre de Sauron. Húrin, um poderoso guerreiro da raça humana se recusa a trair os Elfos e, por isso, ele e sua família são amaldiçoados. Assim, os destinos de Túrin e de sua irmã Niënor são tragicamente entrelaçados.\nEm tom épico e trágico, a narrativa foi inspirada nas mitologias grega, finlandesa e escandinava. Seus personagens, reconhecivelmente humanos, seguem determinados a resistir, mesmo sem a menor esperança de triunfar.",
+            "paginas": 254,
+            "editora": "Harper Collins",
+            "categoria": "Romance",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/os-filhos-de-hurin-j-r-r-tolkien-87846/274732.jpg"
+            ]
+        },
+        {
+            "id": 22,
+            "titulo": "J.R.R. Tolkien: Uma Biografia",
+            "autor": "Humphrey Carpenter",
+            "descricao": "A biografia autorizada do criador da Terra-média. \nDécadas após o falecimento de J.R.R. Tolkien, em setembro de 1973, milhões de pessoas se aventuraram através da leitura de O Hobbit, O Senhor dos Anéis e O Silmarillion e ficaram tão fascinadas quanto intrigadas com o homem muito reservado por trás dos livros. Nascido na África do Sul, em janeiro de 1892, John Ronald Reuel Tolkien ficou órfão durante a infância e cresceu quase na pobreza. Ele serviu na Primeira Guerra Mundial e sobreviveu à Batalha do Somme, onde perdeu quase todos os seus amigos mais íntimos. \nApós a guerra, retornou à vida acadêmica, conquistando uma grande reputação como estudioso e professor universitário, e tornando-se, por fim, Professor de Inglês em Oxford, onde fez amizade com C.S. Lewis e os outros escritores conhecidos, formando um grupo denominado Os Inklings. \nEntão, de repente, sua vida mudou dramaticamente. Certo dia, enquanto corrigia provas, ele acabou escrevendo no verso de uma folha: 'Numa toca no chão vivia um hobbit' – e a fama mundial o aguardava. \nHumphrey Carpenter recebeu acesso irrestrito a todos os documentos de Tolkien e entrevistou seus amigos e familiares. A partir dessas fontes ele segue o longo e doloroso processo de criação que produziu O Senhor dos Anéis e O Silmarillion e fornece uma vasta gama de informações sobre a vida e a obra de um dos mais estimados autores do século XX.",
+            "paginas": 338,
+            "editora": "Harper Collins",
+            "categoria": "Biografia",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/j-r-r-tolkien-uma-biografia-humphrey-carpenter-87843/274729.jpg"
+            ]
+        },
+        {
+            "id": 23,
+            "titulo": "A Parábola do Filho Pródigo",
+            "autor": "John MacArthur",
+            "descricao": "Vinte e dois versículos do Evangelho de Lucas guardam um dos maiores tesouros em forma de história: a parábola do filho pródigo. Repleto de cores, sentimentos e detalhes, este memorável e poderoso relato estimula a reflexão sobre o alcance e a profundidade da graça de Deus, manifestada constantemente em relação ao pecador. Com um análise cuidadosa de cada versículo, John MacArthur um dos maiores teólogos da atualidade apresenta todos os personagens e as viradas de enredo. A partir do ensinamento central da parábola, ele depreende lições profundas e um convite para abraçar a fé cristã com honestidade e sem reservas.",
+            "paginas": 224,
+            "editora": "Thomas Nelson",
+            "categoria": "Cristianismo",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/a-parabola-do-filho-prodigo-john-macarthur-84351/270873.jpg"
+            ]
+        },
+        {
+            "id": 24,
+            "titulo": "As maravilhas de Deus",
+            "autor": "Herman Bavinck",
+            "descricao": "O livro As maravilhas de Deus, é considerada por muitos a melhor teologia sistemática reformada de um só volume. Tratando de temas que vão desde a revelação de Deus até a vida eterna, o autor consegue, de forma clara e envolvente, harmonizar exposição bíblica, clareza argumentativa, exortação pastoral e, acima de tudo, um deslumbramento doxológico com o Deus trino e suas obras. Seja para introduzir a teologia reformada, seja para solidificar o conhecimento a respeito dela, esta obra não pode ser ignorada pelo estudante sério das Escrituras.",
+            "paginas": 736,
+            "editora": "Pilgrim",
+            "categoria": "Cristianismo",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/as-maravilhas-de-deus-herman-bavinck-88181/275203.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/as-maravilhas-de-deus-herman-bavinck-88181/275203-2.jpg"
+            ]
+        },
+        {
+            "id": 25,
+            "titulo": "No Alvorecer Dos Deuses",
+            "autor": "Yago Martins",
+            "descricao": "Desvendando as idolatrias produndas do coração\nQUAL A SUA RELIGIÃO? Muitos teólogos acreditam que a religião de alguém é definida não apenas em esforços de busca por um Deus pessoal, mas em qualquer busca por tudo aquilo que afeta nossos hábitos e comportamentos morais. Isso significa que nós podemos ter uma religião externa e consciente, mas também ter outras em nosso coração que são muito mais baseadas nas adorações do nosso interior do que nas músicas que cantamos na igreja. É assim que entramos no terreno pedregoso da idolatria, assunto que o pastor batista e professor de teologia Yago Martins aborda neste livro inédito. Em No alvorecer dos deuses, seu primeiro livro lançado pela Thomas Nelson Brasil, Yago Martins mostra como a idolatria pode ser algo muito mais abrangente do que pensamos e como ela é amplamente coerente com uma teologia bíblica da idolatria do coração. Valendo-se da linguagem simples e acessível já muito conhecida do público que o acompanha em seu canal do YouTube, “Dois Dedos de Teologia”, Yago nomeia e ilumina as formas mais comuns de idolatria, mostrando como ela corrompe a mente e distorce a identidade humana. Uma obra que ajudará você não somente a identificar os deuses falsos que habitam em seu coração, mas a construir os fundamentos bíblicos necessários para discussões aprofundadas sobre a idolatria no mundo moderno.",
+            "paginas": 192,
+            "editora": "Thomas Nelson",
+            "categoria": "Cristianismo",
+            "top5": 0,
+            "fotos": [
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/no-alvorecer-dos-deuses-yago-martins-88355/275378.jpg",
+                "https://plenitudedistribuidora.fbitsstatic.net/img/p/no-alvorecer-dos-deuses-yago-martins-88355/275378-1.jpg"
+            ]
+        }
     ]
-  }
+}
